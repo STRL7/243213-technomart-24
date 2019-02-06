@@ -106,18 +106,18 @@
     </section>
     <section class="write-us">
       <form class="contact-from" action="https://echo.htmlacademy.ru"  method="post">
-        <label for="name">
-          <p class="write-name">Ваше имя:</p>
-          <input type="text" name="name" placeholder="Имя Фамилия">
-        </label>
-        <label for="e-mail">
-          <p class="write-email">Ваш e-mail:</p>
-          <input type="text" name="e-mail" placeholder="email@example.com">
-        </label>
-        <label for="massage">
-          <p class="write-massage">Текст письма:</p>
-          <textarea name="massage" rows="10" cols="40" placeholder="В свободной форме"></textarea>
-        </label>
+        <p>
+         <label class="write-name" for="name">Ваше имя:</label><br>
+          <input type="text" name="name" placeholder="Имя Фамилия" required>
+        </p>
+        <p>
+          <label class="write-email" for="e-mail">Ваш e-mail:</label><br>
+          <input type="text" name="e-mail" placeholder="email@example.com" required>
+        </p>
+        <p>
+          <label class="write-massage" for="massage">Текст письма:</label><br>
+          <textarea name="massage" rows="10" cols="40" placeholder="В свободной форме" required></textarea>
+        </p>
         <p>
           <button class="submit-button" type="submit">Отправить</button>
         </p>
