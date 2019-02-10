@@ -1,7 +1,7 @@
 body {
+  margin: 0;
   font-family: "Cuprum", sans-serif;
   font-size: 16px;
-  font-weight: 700;
   color: #fff;
 }
 
@@ -116,17 +116,27 @@ body {
   text-decoration: none;
 }
 
-.about-title {
+.site-nav a:hover {
+  background-color: #293449;
+}
+
+.site-nav a:focus {
+  background-color: #1d2739;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.about-title,
+.contacts-title {
   font-size: 30px;
   line-height: 30px;
   font-family: Cuprum;
   color: #000000;
 }
 
-.about-decription {
+.about-decription,
+.contacts-description {
   font-size: 13px;
   line-height: 24px;
-  font-weight: 400;
   font-family: 'PT Sans', sans-serif;
   color: #000000;
 }
@@ -142,4 +152,84 @@ body {
   text-decoration: none;
   color: #fff;
   background-color: #ee3643;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.upper-footer {
+  background-color: #32425c;
+}
+
+.footer-site-nav li,
+.footer-shop-nav li {
+  list-style: none;
+}
+
+.footer-contacts {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-site-nav a {
+  color: #f3f7f9;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.footer-site-nav a:hover,
+.footer-shop-nav a:hover,
+.feedback a:hover,
+.developed a:hover {
+  text-decoration: underline;
+}
+
+.footer-site-nav a:focus {
+  color: rgba(241, 245, 247, 0.5);
+  text-decoration: none;
+}
+
+.footer-shop-nav a:focus {
+  color: rgba(255, 209, 128, 0.5);
+  text-decoration: none;
+}
+
+.feedback a:focus,
+.developed a:focus {
+  color: #ee3643;
+  text-decoration: none;
+}
+
+.footer-shop-nav a {
+  color: #ffd180;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.feedback a,
+.developed a {
+  color: #ffd180;
+  text-decoration: none;
+}
+
+.feedback,
+.developed,
+.copyright {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.footer-social {
+  background-color: #293449;
+}
+
+.social-links li {
+  list-style: none;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #fff;
 }
