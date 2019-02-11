@@ -125,12 +125,124 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.breadcrumbs a {
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-decoration: none;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.content-title {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  background-color: #f2f6f8;
+}
+
+.inner-page {
+  color: #000;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter ul {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.filter legend {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.content ul {
+  list-style: none;
+}
+
+.filter-button {
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.catalog-item-name a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  font-family: "PT Sans"sans-serif;
+
+}
+
+.catalog-item-price {
+  font-family: "PT Sans", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.price {
+  text-decoration: line-through;
+  color: #999999;
+}
+
+.sell-price {
+  text-decoration: none;
+  color: #fff;
+  background-image: url(../img/btn-copy-14.svg);
+}
+
+.hidden-buttons a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.buy-catalog-button {
+  box-shadow: inset 0px -3px 0 0 #367315;
+  background-color: #63a63e;
+  color: #fff;
+}
+
+.buy-catalog-button:hover {
+  background-color: #5fbb2d;
+}
+
+.buy-catalog-button:focus {
+  background-color: #518534;
+}
+
+.bookmarks-catalog-button {
+  border: 3px solid #63a63e;
+  border-radius: 10%;
+  color: #32425c;
+}
+
+.bookmarks-catalog-button:hover {
+  border: 3px solid #32425c;
+}
+
+.bookmarks-catalog-button:focus {
+  opacity: 0.3;
+}
+
 .about-title,
 .contacts-title {
   font-size: 30px;
   line-height: 30px;
   font-family: Cuprum;
   color: #000000;
+  font-weight: 400;
 }
 
 .about-decription,
