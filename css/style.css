@@ -161,6 +161,7 @@ body {
 .filter ul {
   list-style: none;
   text-transform: uppercase;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .filter legend {
