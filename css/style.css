@@ -162,6 +162,9 @@ body {
   list-style: none;
   text-transform: uppercase;
   font-family: "PT Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000;
 }
 
 .filter legend {
