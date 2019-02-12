@@ -6,16 +6,17 @@
   <title>Document</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
-<body class="inner-page">
+<body>
   <header class="main-header">
     <nav class="shop-nav">
-      <a href="index.html">
-        <img src="img/logo.svg" width="109" height="17" alt="Лого сайта">
-      </a>
+      <section class="logo">
+        <a href="index.html">
+          <img src="img/logo.svg" width="109" height="17" alt="Лого сайта">
+        </a>
+      </section>
       <p class="site-searching">
         <form class="search" action="https://echo.htmlacademy.ru" method="get">
           <input type="search" placeholder="Поиск" required>
@@ -45,7 +46,7 @@
       </section>
     </section>
     <ul class="site-nav">
-      <li><a href="#">Главная</a></li>
+      <li><a href="index.html">Главная</a></li>
       <li><a href="#">Компания</a></li>
       <li class="current-page">Каталог</li>
       <li><a href="#">Новости</a></li>
@@ -291,7 +292,11 @@
   </main>
   <footer class="site-footer">
     <section class="upper-footer">
-        <img src="img/logo.svg" width="109" height="17" alt="Лого сайта">
+      <section class="logo footer-logo">
+        <a href="index.html">
+          <img src="img/logo.svg" width="109" height="17" alt="Лого сайта">
+        </a>
+      </section>
       <ul class="footer-site-nav">
         <li><a href="#">Компания</a></li>
         <li><a href="#">Новости</a></li>
@@ -314,7 +319,7 @@
           <li><a class="social-button" href="#">Фейсбук</a></li>
           <li><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
-      <p class="Feedback">Обратная связь: <a href="#">mail@htmlacademy.ru</a></p>
+      <p class="feedback">Обратная связь: <a href="#">mail@htmlacademy.ru</a></p>
       <p class="developed">Разработано — <a href="#">htmlacademy</a></p>
     </section>
   </footer>
