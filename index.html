@@ -6,29 +6,25 @@
   <title>Техномарт</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
   <header class="main-header">
     <nav class="shop-nav">
-      <section class="logo">
-        <a href="index.html">
-          <img src="img/logo.svg" width="109" height="17" alt="Лого сайта">
-        </a>
-      </section>
-      <p class="site-searching">
-        <form class="search" action="https://echo.htmlacademy.ru" method="get">
-          <input type="search" placeholder="Поиск" required>
-        </form>
-      </p>
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" width="109" height="17" alt="Лого сайта">
+      </a>
+      <form class="search" action="https://echo.htmlacademy.ru" method="get">
+        <input type="search" placeholder="Поиск" required>
+      </form>
       <ul class="user-bookmarks">
         <li class="bookmarks"><a href="#">Закладки:0</a></li>
         <li class="basket"><a href="#">Корзина:0</a></li>
         <li class="checkout"><a href="#">Оформить заказ</a></li>
       </ul>
     </nav>
-    <section class="for-client">
+    <div class="for-client">
       <h1 class="header-description">
         Интернет-магазин строительных материалов<br> и инструментов для ремонта
       </h1>
@@ -38,15 +34,15 @@
         </a>
         <span class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
       </p>
-      <section class="profile">
+      <div class="profile">
         <p class="enter"><a href="#">Войти</a></p>
         <p class="registration"><a href="#">Реристрация</a></p>
         <!--<p class="profile-name"><a href="#">Равшан Джамшутович</a></p>
         <p class="logout"><a href="logout.html">Выйти</a></p>
         <p class="orders"><a href="#">Мои заказы</a></p>
         <p class="account"><a href="#">Личный кабинет</a></p>-->
-      </section>
-    </section>
+      </div>
+    </div>
     <ul class="site-nav">
       <li class="current-page">Главная</li>
       <li><a href="#">Компания</a></li>
@@ -80,12 +76,10 @@
     </section>
   </main>
   <footer class="site-footer">
-    <section class="upper-footer">
-      <section class="logo footer-logo">
-        <a href="index.html">
-          <img src="img/logo.svg" width="109" height="17" alt="Лого сайта">
-        </a>
-      </section>
+    <div class="upper-footer">
+      <a class="logo footer-logo" href="index.html">
+        <img src="img/logo.svg" width="109" height="17" alt="Лого сайта">
+      </a>
       <ul class="footer-site-nav">
         <li><a href="#">Компания</a></li>
         <li><a href="#">Новости</a></li>
@@ -100,8 +94,8 @@
         <li><a href="#">Инструмент</a></li>
         <li><a href="#">Спецпредложения</a></li>
       </ul>
-    </section>
-    <section class="footer-social">
+    </div>
+    <div class="footer-social">
       <p class="copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
       <ul class="social-links">
         <li><a class="social-button" href="#">Вконтакте</a></li>
@@ -110,8 +104,8 @@
       </ul>
       <p class="feedback">Обратная связь: <a href="#">mail@htmlacademy.ru</a></p>
       <p class="developed">Разработано — <a href="#">htmlacademy</a></p>
-    </section>
-    <section class="write-us">
+    </div>
+    <div class="write-us">
       <form class="contact-from" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label class="write-name" for="name-id">Ваше имя:</label><br>
@@ -129,7 +123,7 @@
           <button class="submit-button" type="submit">Отправить</button>
         </p>
       </form>
-    </section>
+    </div>
   </footer>
 </body>
 
