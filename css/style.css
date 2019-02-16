@@ -362,16 +362,10 @@ body {
   color: #fff;
 }
 
-.main-wrapper {
-}
 
 .wrapper {
   width: 940px;
   margin: 0 auto;
-}
-
-.for-client {
-
 }
 
 .shop-nav {
@@ -397,4 +391,15 @@ body {
   box-shadow: inset 0px -5px 0 0 #293449;
 }
 
+.flex-about {
+  display: flex;
+  justify-content: space-between;
+}
 
+.about {
+  width: 520px;
+}
+
+.contacts {
+  width: 300px;
+}
