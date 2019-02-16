@@ -15,6 +15,7 @@ body {
 
 .user-bookmarks,
 .site-nav {
+  margin: 0;
   list-style: none;
 }
 
@@ -117,9 +118,16 @@ body {
 }
 
 .site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
   background-color: #32425c;
-  text-align: center;
   box-shadow: inset 0px -5px 0 0 #293449;
+}
+
+.site-nav li {
+  display: inline;
 }
 
 .site-nav a,
@@ -360,4 +368,35 @@ body {
 .social-links a {
   text-decoration: none;
   color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper {
+  width: 940px;
+  display: flex;
+  align-items: center;
+}
+
+.for-client {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shop-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-bookmarks {
+  width: 435px;
+}
+
+.search {
+  width: 270px;
 }
