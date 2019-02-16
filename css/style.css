@@ -363,27 +363,19 @@ body {
 }
 
 .main-wrapper {
-  display: flex;
-  justify-content: space-between;
 }
 
 .wrapper {
   width: 940px;
-  display: flex;
-  align-items: center;
+
   margin: 0 auto;
 }
 
 .for-client {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
 }
 
 .shop-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   height: 42px;
 }
 
@@ -401,17 +393,9 @@ body {
 
 .site-nav {
   width: 940px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   height: 60px;
   background-color: #32425c;
   box-shadow: inset 0px -5px 0 0 #293449;
 }
 
 
-/*.site-nav-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}*/
