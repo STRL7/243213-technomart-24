@@ -403,3 +403,16 @@ body {
 .contacts {
   width: 300px;
 }
+
+.flex-catalog {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  width: 700px;
+}
+
+.filters-section {
+ width: 220px;
+}
