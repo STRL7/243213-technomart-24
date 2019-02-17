@@ -183,6 +183,7 @@ body {
 
 .content ul {
   list-style: none;
+  margin-right: -20px;
 }
 
 .filter-button {
@@ -452,11 +453,12 @@ body {
 
 .flex-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 
 }
 
 .catalog-item {
   width: 220px;
+  margin-right: 20px;
 }
