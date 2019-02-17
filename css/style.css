@@ -374,10 +374,6 @@ body {
   margin: 0 auto;
 }
 
-.shop-nav {
-  height: 42px;
-}
-
 .user-bookmarks {
   width: 435px;
 }
@@ -452,4 +448,15 @@ body {
 .catalog-list {
   padding: 0;
   margin: 0;
+}
+
+.flex-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.catalog-item {
+  width: 220px;
 }
