@@ -298,11 +298,13 @@ body {
 .footer-site-nav li,
 .footer-shop-nav li {
   list-style: none;
+  display: inline
 }
 
 .footer-contacts {
   font-size: 18px;
   line-height: 24px;
+  width: 320px;
 }
 
 .footer-site-nav a {
@@ -461,4 +463,43 @@ body {
 .catalog-item {
   width: 220px;
   margin-right: 20px;
+}
+
+.for-client {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 158px;
+}
+
+.flex-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 105px;
+}
+
+.flex-upfoot {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 193px;
+}
+
+.footer-logo {
+  width: 220px;
+}
+
+.footer-site-nav {
+  width: 550px;
+  text-align: right;
+  justify-content: space-between;
+  display: flex;
+}
+
+.footer-shop-nav {
+  width: 530px;
+  text-align: right;
+  justify-content: space-between;
+  display: flex;
 }
