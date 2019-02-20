@@ -524,6 +524,7 @@ body {
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
+  text-transform: uppercase;
 }
 
 .manufacturers-list {
@@ -532,4 +533,8 @@ body {
   list-style: none;
   margin-right: -20px;
   align-items: center;
+}
+
+.services {
+  background-color: #f4f7f9;
 }
