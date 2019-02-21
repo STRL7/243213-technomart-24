@@ -20,6 +20,15 @@ body {
   list-style: none;
 }
 
+.logo {
+  width: 220px;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+  padding: 13px 0px 16px 0px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
 .logo a {
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
@@ -33,6 +42,23 @@ body {
   color: #32425c;
 }
 
+.search input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  background-image: url(../img/icon-search.svg);
+  background-repeat: no-repeat;
+}
+
+.search input::placeholder {
+  font-family: Cuprum;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: left;
+  color: #fff;
+}
+
 .enter a,
 .registration a {
   font-family: 'Cuprum', Arial, sans-serif;
@@ -44,26 +70,42 @@ body {
   text-decoration: none;
 }
 
-
-.checkout a {
+.checkout {
   background-color: #63a63e;
+  width: 150px;
+  padding: 12px 0 12px;
+  text-align: center;
 }
 
-.checkout a:hover {
+.checkout:hover {
   background-color: #5fbb2d;
 }
 
-.checkout a:focus {
+
+.checkout:focus {
   background-color: #518534;
 }
 
-.bookmarks a:hover,
-.basket a:hover {
+.basket {
+  background-color: #ee3643;
+  width: 150px;
+  padding: 12px 0 12px;
+  text-align: center
+}
+
+.bookmarks {
+  width: 150px;
+  padding: 12px 0 12px;
+  text-align: center;
+}
+
+.bookmarks:hover,
+.basket:hover {
   background-color: #212a3a;
 }
 
-.bookmarks a:focus,
-.basket a:focus {
+.bookmarks:focus,
+.basket:focus {
   background-color: #161d29;
 }
 
@@ -373,12 +415,14 @@ body {
 }
 
 .user-bookmarks {
-  width: 435px;
+  width: 433px;
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
 
 .user-bookmarks li {
   display: inline;
-  padding: 0;
 }
 
 .search {
@@ -542,4 +586,59 @@ body {
 
 .services {
   background-color: #f4f7f9;
+}
+
+.materials,
+.tools,
+.technique,
+.sells,
+.devivery {
+  width: 300px;
+}
+
+.materials {
+  background: url(../img/icon-1.svg) no-repeat right #ffbf47;
+}
+
+.materials-title,
+.tools-title,
+.technique-title,
+.sells-title,
+.devivery-title {
+  font-family: Cuprum;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: left;
+  color: #fff;
+}
+
+.categories-button {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-family: Cuprum;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #fff;
+}
+
+.tools {
+  background: url(../img/icon-2.svg) no-repeat right #3bbce3;
+}
+
+.technique {
+  background: url(../img/icon-3.svg) no-repeat right #dc91d8;
+}
+
+.sells {
+  background: url(../img/icon-4.svg) no-repeat right #8ed78f;
+}
+
+.devivery {
+  background: url(../img/icon-5.svg) no-repeat right #ffc047;
+}
+
+.slides {
+  background-image: url(../img/layer-99.png);
 }
