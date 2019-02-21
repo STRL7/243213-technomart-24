@@ -466,6 +466,11 @@ body {
   margin-right: 20px;
 }
 
+.brand-item {
+  width: 220px;
+  margin-right: 20px;
+}
+
 .for-client {
   display: flex;
   justify-content: space-between;
