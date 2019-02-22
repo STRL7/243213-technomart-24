@@ -42,13 +42,30 @@ body {
   color: #32425c;
 }
 
+.search {
+  padding-left: 37px;
+  position: relative;
+  width: 220px;
+}
+
 .search input {
   border: none;
   outline: none;
   background: transparent;
+  color: #fff;
   width: 100%;
-  background-image: url(../img/icon-search.svg);
+}
+
+.search::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  width: 16px;
+  height: 18px;
+  background-image: url(../img/icon-search.png);
   background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .search input::placeholder {
@@ -423,10 +440,6 @@ body {
 
 .user-bookmarks li {
   display: inline;
-}
-
-.search {
-  width: 270px;
 }
 
 .site-nav {
