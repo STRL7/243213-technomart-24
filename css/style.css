@@ -42,6 +42,15 @@ body {
   color: #32425c;
 }
 
+.footer-logo {
+  width: 220px;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+  padding: 18px 0px 23px 0px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
 .search {
   padding-left: 37px;
   position: relative;
@@ -347,6 +356,7 @@ body {
 .upper-footer {
   background-color: #32425c;
   color: #fff;
+  height: 193px;
 }
 
 .footer-site-nav li,
@@ -546,11 +556,6 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  height: 193px;
-}
-
-.footer-logo {
-  width: 220px;
 }
 
 .footer-site-nav {
