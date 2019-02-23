@@ -52,9 +52,9 @@ body {
 }
 
 .search {
-  padding-left: 37px;
+
   position: relative;
-  width: 220px;
+  width: 270px;
 }
 
 .search input {
@@ -62,17 +62,19 @@ body {
   outline: none;
   background: transparent;
   color: #fff;
-  width: 100%;
+  min-width: 220px;
+  padding: 12px 20px 12px 50px;
+  box-sizing: border-box;
 }
 
 .search::before {
   content: "";
   position: absolute;
-  top: 0px;
-  left: 5px;
+  top: 12px;
+  left: 18px;
   width: 16px;
   height: 18px;
-  background-image: url(../img/icon-search.png);
+  background-image: url(../img/cart-icon.png);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -83,17 +85,6 @@ body {
   line-height: 18px;
   text-align: left;
   color: #fff;
-}
-
-.enter a,
-.registration a {
-  font-family: 'Cuprum', Arial, sans-serif;
-  font-size: 21px;
-  line-height: 21px;
-  text-align: left;
-  color: #000000;
-  background-color: #fff;
-  text-decoration: none;
 }
 
 .checkout a {
@@ -139,11 +130,28 @@ body {
   box-sizing: border-box;
 }
 
-
 .bookmarks {
-  width: 150px;
-  padding: 12px 0 12px;
-  text-align: center;
+  position: relative;
+}
+
+.bookmarks::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 18px;
+  width: 16px;
+  height: 18px;
+  background-image: url(../img/icon-bookmark.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.bookmarks a {
+  min-width: 150px;
+  padding: 12px 20px 12px 34px;
+  justify-content: center;
+  display: flex;
+  box-sizing: border-box;
 }
 
 .bookmarks a:hover,
@@ -167,7 +175,7 @@ body {
   color: #ee3643;
   font-size: 16px;
   font-weight: 400;
-  width: 196px;
+  width: 197px;
   font-style: italic;
   line-height: 23px;
 }
@@ -177,17 +185,85 @@ body {
   font-size: 21px;
   line-height: 1;
   text-decoration: none;
+  border: 3px solid #fff;
+  padding: 13px 52px 11px 74px;
+  display: flex;
+  position: relative;
+}
+
+.telephone::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 18px;
+  width: 16px;
+  height: 18px;
+  background-image: url(../img/icon-phone.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .header-address {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
+  display: flex;
+  justify-content: center;
 }
 
 .orders a:hover,
 .account a:hover {
   color: #ee3643;
+}
+
+.profile {
+  display: flex;
+}
+
+.enter {
+  position: relative;
+}
+
+.enter::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 18px;
+  width: 20px;
+  height: 17px;
+  background-image: url(../img/icon-login.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.enter a {
+  margin-right: 10px;
+  min-width: 121px;
+  padding: 14px 25px 15px 48px;
+  justify-content: center;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.registration a {
+  min-width: 150px;
+  padding: 14px 25px 15px 25px;
+  justify-content: center;
+  display: flex;
+  box-sizing: border-box;
+
+}
+
+.enter a,
+.registration a {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: left;
+  color: #000000;
+  background-color: #fff;
+  text-decoration: none;
+
 }
 
 .profile-name a:focus,
@@ -207,8 +283,25 @@ body {
   text-decoration: none;
 }
 
-.site-nav li {
-  display: inline;
+.site-nav {
+  width: 940px;
+  height: 60px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  background-color: #32425c;
+  box-shadow: inset 0px -5px 0 0 #293449;
+}
+
+
+.current-page,
+.site-nav li a {
+  min-width: 127px;
+  justify-content: center;
+  padding: 21px 30px 22px 29px;
+  display: flex;
+  box-sizing: border-box;
+
 }
 
 .site-nav a,
@@ -473,17 +566,6 @@ body {
   display: inline;
 }
 
-.site-nav {
-  width: 940px;
-  height: 60px;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #32425c;
-  box-shadow: inset 0px -5px 0 0 #293449;
-}
-
 .flex-about {
   display: flex;
   justify-content: space-between;
@@ -516,7 +598,6 @@ body {
 
 .flex-shop-nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 42px;
 }
