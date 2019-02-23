@@ -96,14 +96,16 @@ body {
   text-decoration: none;
 }
 
-.checkout {
+.checkout a {
   background-color: #63a63e;
-  width: 150px;
-  padding: 12px 0 12px;
-  text-align: center;
+  min-width: 150px;
+  padding: 12px 20px 12px 22px;
+  justify-content: center;
+  display: flex;
+  box-sizing: border-box;
 }
 
-.checkout:hover {
+.checkout a:hover {
   background-color: #5fbb2d;
 }
 
@@ -113,11 +115,30 @@ body {
 }
 
 .basket {
-  background-color: #ee3643;
-  width: 150px;
-  padding: 12px 0 12px;
-  text-align: center
+  position: relative;
 }
+
+.basket::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 18px;
+  width: 16px;
+  height: 18px;
+  background-image: url(../img/cart-icon.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.basket a {
+  background-color: #ee3643;
+  min-width: 150px;
+  padding: 12px 20px 12px 34px;
+  justify-content: center;
+  display: flex;
+  box-sizing: border-box;
+}
+
 
 .bookmarks {
   width: 150px;
@@ -125,13 +146,13 @@ body {
   text-align: center;
 }
 
-.bookmarks:hover,
-.basket:hover {
+.bookmarks a:hover,
+.basket a:hover {
   background-color: #212a3a;
 }
 
-.bookmarks:focus,
-.basket:focus {
+.bookmarks a:focus,
+.basket a:focus {
   background-color: #161d29;
 }
 
