@@ -178,6 +178,7 @@ body {
   width: 197px;
   font-style: italic;
   line-height: 23px;
+  margin-top: 46px;
 }
 
 .telephone {
@@ -216,12 +217,20 @@ body {
   color: #ee3643;
 }
 
+.shop-telephone {
+  margin-top: 46px;
+}
+
 .profile {
   display: flex;
 }
 
 .enter {
   position: relative;
+      margin-top: 46px;
+}
+.registration {
+  margin-top: 46px;
 }
 
 .enter svg {
@@ -239,7 +248,7 @@ body {
 .enter a {
   margin-right: 10px;
   min-width: 121px;
-  padding: 14px 25px 15px 48px;
+  padding: 15px 25px 15px 48px;
   justify-content: center;
   display: flex;
   box-sizing: border-box;
@@ -247,7 +256,7 @@ body {
 
 .registration a {
   min-width: 150px;
-  padding: 14px 25px 15px 25px;
+  padding: 15px 25px 15px 25px;
   justify-content: center;
   display: flex;
   box-sizing: border-box;
@@ -643,7 +652,6 @@ body {
 .for-client {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   height: 158px;
 }
 
