@@ -67,13 +67,14 @@ body {
   box-sizing: border-box;
 }
 
-.search::before {
+.search svg {
   content: "";
   position: absolute;
   top: 12px;
   left: 18px;
   width: 16px;
   height: 18px;
+  fill: rgba(255, 255, 255, 0.3);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -108,14 +109,14 @@ body {
   position: relative;
 }
 
-.basket::before {
+.basket svg {
   content: "";
   position: absolute;
   top: 12px;
   left: 18px;
   width: 16px;
   height: 18px;
-  background-image: url(../img/cart-icon.png);
+  fill: rgba(255, 255, 255, 0.3);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -133,14 +134,14 @@ body {
   position: relative;
 }
 
-.bookmarks::before {
+.bookmarks svg {
   content: "";
   position: absolute;
   top: 12px;
   left: 18px;
   width: 16px;
   height: 18px;
-  background-image: url(../img/icon-bookmark.png);
+  fill: rgba(255, 255, 255, 0.3);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -190,14 +191,14 @@ body {
   position: relative;
 }
 
-.telephone::before {
+.telephone svg {
   content: "";
   position: absolute;
   top: 13px;
   left: 18px;
   width: 16px;
   height: 18px;
-  background-image: url(../img/icon-phone.png);
+  fill: rgba(183, 191, 200, 1);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -223,14 +224,14 @@ body {
   position: relative;
 }
 
-.enter::before {
+.enter svg {
   content: "";
   position: absolute;
   top: 14px;
   left: 18px;
   width: 20px;
   height: 17px;
-  background-image: url(../img/icon-login.png);
+  fill: rgba(197, 197, 197, 1);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
