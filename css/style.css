@@ -178,7 +178,7 @@ body {
   width: 197px;
   font-style: italic;
   line-height: 23px;
-  margin-top: 46px;
+  margin: 46px 0 0 53px;
 }
 
 .telephone {
@@ -227,8 +227,9 @@ body {
 
 .enter {
   position: relative;
-      margin-top: 46px;
+  margin-top: 46px;
 }
+
 .registration {
   margin-top: 46px;
 }
@@ -450,6 +451,7 @@ body {
   font-family: 'Cuprum', Arial, sans-serif;
   color: #000000;
   font-weight: 400;
+  margin-bottom: 24px;
 }
 
 .about-decription,
@@ -460,12 +462,28 @@ body {
   color: #000000;
 }
 
+.about-decription {
+  margin-bottom: 24px;
+}
+
+.about-decription2 {
+  width: 390px;
+}
+
+.contacts-description {
+  width: 179px;
+  margin-bottom: 36px;
+}
+
 .advantages li {
   font-size: 18px;
   line-height: 20px;
   color: #000;
   list-style: none;
+  margin-bottom: 20px;
+  position: relative;
 }
+
 
 .button {
   text-decoration: none;
@@ -474,6 +492,15 @@ body {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  box-sizing: border-box;
+  padding: 10px 40px 10px 41px;
+  display: inline-block;
+  text-align: center;
+  min-width: 195px;
+}
+
+.map-button {
+  min-width: 300px;
 }
 
 .upper-footer {
@@ -486,6 +513,10 @@ body {
 .footer-shop-nav li {
   list-style: none;
   display: inline
+}
+
+.contacts-map img {
+  margin-bottom: 35px;
 }
 
 .footer-contacts {
@@ -535,6 +566,7 @@ body {
 .developed a {
   color: #ffd180;
   text-decoration: none;
+  display: block;
 }
 
 .feedback,
@@ -544,9 +576,26 @@ body {
   line-height: 18px;
 }
 
+.copyright {
+  width: 227px;
+}
+
 .footer-social {
   background-color: #293449;
   color: #fff;
+}
+
+.footer-links {
+  width: 300px;
+  display: flex;
+}
+
+.feedback {
+  margin-right: 53px;
+}
+
+.developed {
+  margin-right: 15px;
 }
 
 .social-links li {
@@ -582,10 +631,27 @@ body {
 
 .about {
   width: 520px;
+  margin: 82px 0 86px 0;
 }
 
 .contacts {
   width: 300px;
+  margin: 82px 0 98px 0;
+}
+
+.advantages {
+  margin-bottom: 37px;
+}
+
+.advantages li::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
+  margin-top: 9px;
+  background-position: 0 0;
 }
 
 .flex-catalog {
@@ -611,7 +677,6 @@ body {
   height: 42px;
 }
 
-.advantages,
 .footer-shop-nav,
 .footer-site-nav,
 .social-links {
@@ -673,6 +738,46 @@ body {
   text-align: right;
   justify-content: space-between;
   display: flex;
+  margin-top: 36px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 41px;
+  height: 42px;
+  border-radius: 50px;
+  background-color: #212a3a;
+}
+
+.vk {
+  background-image: url(../img/vk-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fb {
+  background-image: url(../img/fb-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ins {
+  background-image: url(../img/insta-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 141px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+
 }
 
 .footer-shop-nav {
@@ -680,6 +785,7 @@ body {
   text-align: right;
   justify-content: space-between;
   display: flex;
+  margin-top: 18px;
 }
 
 .catalog-list-index {
