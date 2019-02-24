@@ -52,7 +52,6 @@ body {
 }
 
 .search {
-
   position: relative;
   width: 270px;
 }
@@ -303,6 +302,38 @@ body {
   box-shadow: inset 0px -5px 0 0 #293449;
 }
 
+.profile-links {
+  display: flex;
+}
+
+.orders {
+  margin: 0 25px 0 0;
+}
+
+.account {
+  margin: 0 0 0 0px;
+}
+
+.account a {
+  position: relative;
+}
+
+.account a::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 7px;
+  width: 4px;
+  height: 5px;
+  background-color: #32425c;
+  background-position: 0 0;
+}
+
+.profile-logout {
+  display: flex;
+  position: relative;
+  padding: 40px 66px 0 0;
+}
 
 .current-page,
 .site-nav li a {
@@ -311,7 +342,18 @@ body {
   padding: 21px 30px 22px 29px;
   display: flex;
   box-sizing: border-box;
+}
 
+.profile-logout .logout svg {
+  content: "";
+  position: absolute;
+  top: 18px;
+  /* left: 187px; */
+  width: 16px;
+  height: 18px;
+  fill: rgba(255, 255, 255, 0.3);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .site-nav a,
