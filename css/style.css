@@ -11,7 +11,8 @@ body {
 }
 
 .main-header {
-  background-color: #f4f7f9
+  background-color: #f4f7f9;
+  height: 320px;
 }
 
 .user-bookmarks,
@@ -407,21 +408,68 @@ body {
 .breadcrumbs {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 20px 0 0 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
-.breadcrumbs a {
+.breadcrumbs li {
+  position: relative;
+  margin-right: 39px;
+}
+
+.breadcrumbs li::after {
+  content: "";
+
+  position: absolute;
+  top: 4px;
+  right: -25px;
+
+  width: 8px;
+  height: 12px;
+  background-image: url(../img/icon-right-small.svg);
+}
+
+.breadcrumbs a,
+.breadcrumbs-current {
   font-size: 13px;
   line-height: 18px;
+  text-transform: uppercase;
   color: #000000;
   text-decoration: none;
   font-family: 'PT Sans', Arial, sans-serif;
 }
 
+.breadcrumbs li:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs-current::after {
+  display: none;
+}
+
+.breadcrumbs-main a {
+  margin: 0 0 0 20px;
+}
+
+.breadcrumbs-main a::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 0;
+  width: 14px;
+  height: 12px;
+  background-image: url(../img/icon-home.svg);
+}
+
 .catalog-content-title {
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
   color: #32425c;
+  padding: 27px 0 28px 27px;
   background-color: #f2f6f8;
 }
 
@@ -444,7 +492,9 @@ body {
   line-height: 30px;
   font-family: 'PT Sans', Arial, sans-serif;
   text-transform: uppercase;
+  margin-bottom: 5px;
 }
+
 
 .filter-button {
   border: 1px solid #e5e5e5;
@@ -452,6 +502,7 @@ body {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  padding: 9px 38px 11px 37px;
   text-transform: uppercase;
 }
 
@@ -948,4 +999,25 @@ body {
 
 .slides {
   background-image: url(../img/layer-99.png);
+}
+
+.page-descr {
+  background-color: #f4f7f9;
+}
+
+.page-descr-title {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 0 0 26px 0;
+  padding: 64px 0 0 0;
+}
+
+.page-descr-text {
+  margin: 0;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: 'PT Sans', Arial, sans-serif;
+  padding: 0px 0 68px 0;
 }
