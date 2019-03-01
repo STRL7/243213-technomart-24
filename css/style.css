@@ -474,7 +474,15 @@ body {
 }
 
 .filter fieldset {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+
   border: none;
+}
+
+.filter fieldset:first-child {
+  margin-bottom: 40px;
 }
 
 .filter ul {
@@ -484,6 +492,8 @@ body {
   font-size: 15px;
   line-height: 20px;
   color: #000;
+  padding: 0;
+  margin: 0;
 }
 
 .filter legend {
@@ -495,6 +505,82 @@ body {
   margin-bottom: 5px;
 }
 
+.filter-option {
+  margin-bottom: 18px;
+  padding-left: 34px;
+}
+
+.filter-option label {
+  position: relative;
+  display: block;
+  user-select: none;
+}
+
+.filter-input-checkbox+label::before {
+  content: "";
+  position: absolute;
+  left: -34px;
+  top: -2px;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/checkbox-off.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:checked+label::after {
+  content: "";
+  position: absolute;
+  left: -34px;
+  top: -2px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.filter-input-radio+label::before {
+  content: "";
+  position: absolute;
+  left: -34px;
+  top: -2px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio:checked+label::after {
+  content: "";
+  position: absolute;
+  left: -34px;
+  top: -2px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
 
 .filter-button {
   border: 1px solid #e5e5e5;
@@ -804,12 +890,6 @@ body {
 .footer-shop-nav,
 .footer-site-nav,
 .social-links {
-  padding: 0;
-  margin: 0;
-}
-
-.manufacturers,
-.nutrition {
   padding: 0;
   margin: 0;
 }
