@@ -124,6 +124,26 @@
       <h1 class="catalog-content-title">Перфораторы</h1>
       <div class="flex-catalog">
         <section class="filters-section">
+          <p class="filters-title">Фильтры:</p>
+          <form method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="filter-item">
+              <legend>Цена:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="margin-left: 10%; width: 70%"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price"><input name="min-price" type="text" value="0"></label>
+                  <label class="max-price"><input name="max-price" type="text" value="30000"></label>
+                </div>
+              </div>
+            </fieldset>
+            <!-- Другие элементы формы -->
+          </form>
           <div class="line"></div>
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <fieldset>
@@ -171,6 +191,22 @@
           </form>
         </section>
         <section class="catalog-content">
+          <div class="sorting">
+            <div class="sorting-title">Сортировка:</div>
+            <a href="#" class="sorting-by selected">По цене</a>
+            <a href="#" class="sorting-by by_type ">По типу</a>
+            <a href="#" class="sorting-by by_func ">По функционалу</a>
+            <a href="#" class="up-dir selected-dir">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                <polygon points="5.5,0 0,10 11,10 " />
+              </svg>
+            </a>
+            <a href="#" class="down-dir">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                <polyline points="5.5,10 0,0 11,0 " />
+              </svg>
+            </a>
+          </div>
           <div class="catalog-items">
             <div class="catalog-item">
               <div class="actions">
@@ -266,6 +302,12 @@
               <div class="price">12500 Р.</div>
             </div>
           </div>
+          <ul class="pages-breadcrumbs">
+            <li><a class="pages-breadcrumbs-current" href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">Следующая</a></li>
+          </ul>
         </section>
       </div>
     </div>
