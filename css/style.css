@@ -256,7 +256,7 @@ body {
 .enter svg {
   content: "";
   position: absolute;
-  top: 14px;
+  top: 17px;
   left: 18px;
   width: 20px;
   height: 17px;
