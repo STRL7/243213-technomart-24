@@ -620,16 +620,23 @@ body {
 
 .current-page,
 .site-nav li a {
-  min-width: 127px;
+  /*min-width: 127px;*/
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 21px 30px 22px 29px;
+  padding: 20px 24px 23px 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.site-nav .pre-padding {
+      padding: 20px 30px 23px 51px;
+}
+.site-nav .after-padding {
+      padding: 20px 55px 23px 42px;
 }
 
 .profile-logout .logout svg {
