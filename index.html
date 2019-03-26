@@ -17,15 +17,11 @@
           <img src="img/logo.svg" width="109" height="17" alt="Лого сайта">
         </a>
         <form class="search" action="https://echo.htmlacademy.ru" method="get">
-          <input type="search" placeholder="Поиск" required>
+          <input type="search" placeholder="Поиск:" required>
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17px" height="17px" viewBox="0 0 17 17">
-            <g id="Layer_1">
-            </g>
-            <g id="Layer_2">
-              <path d="M17,15.586l-3.542-3.542C14.421,10.782,15,9.21,15,7.5C15,3.358,11.643,0,7.5,0C3.358,0,0,3.358,0,7.5
+            <path d="M17,15.586l-3.542-3.542C14.421,10.782,15,9.21,15,7.5C15,3.358,11.643,0,7.5,0C3.358,0,0,3.358,0,7.5
     C0,11.643,3.358,15,7.5,15c1.71,0,3.282-0.579,4.544-1.542L15.586,17L17,15.586z M2,7.5C2,4.467,4.467,2,7.5,2
     C10.532,2,13,4.467,13,7.5c0,3.032-2.468,5.5-5.5,5.5C4.467,13,2,10.532,2,7.5z" />
-            </g>
           </svg>
         </form>
         <ul class="user-bookmarks">
@@ -112,13 +108,13 @@
         <div class="slider">
           <div class="slides">
             <p class="slides-title">Дрели</p>
-            <p class="slides-description">Соседям на радость</p>
-            <a href="#" class="button">Открыть каталог</a>
+            <p class="slides-description">Соседям на радость!</p>
+            <a href="catalog.html" class="button slider-button">Открыть каталог</a>
           </div>
           <div class="slides">
             <p class="slides-title">Перфораторы</p>
             <p class="slides-description">Настоящие мужские игрушки</p>
-            <a href="#" class="button">Открыть каталог</a>
+            <a href="catalog.html" class="button slider-button">Открыть каталог</a>
           </div>
         </div>
         <div class="box">
@@ -324,33 +320,36 @@
       <div class="wrapper flex-social">
         <p class="copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
         <ul class="social-links">
-          <li><a class="social-button vk" href="#"></a></li>
-          <li><a class="social-button fb" href="#"></a></li>
-          <li><a class="social-button ins" href="#"></a></li>
+          <li><a class="social-button vk" title="Vk" href="#"></a></li>
+          <li><a class="social-button fb" title="Facebook" href="#"></a></li>
+          <li><a class="social-button ins" title="Instagram" href="#"></a></li>
         </ul>
         <div class="footer-links">
           <p class="feedback">Обратная связь: <a href="#">mail@htmlacademy.ru</a></p>
-          <p class="developed">Разработано — <a href="#">htmlacademy.ru</a></p>
+          <p class="developed">Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
         </div>
       </div>
     </div>
     <div class="write-us">
-      <form class="contact-from" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label class="write-name" for="name-id">Ваше имя:</label>
-          <input type="text" name="name" id="name-id" placeholder="Имя Фамилия" required>
-        </p>
-        <p>
-          <label class="write-email" for="email-id">Ваш e-mail:</label>
-          <input type="text" name="e-mail" id="email-id" placeholder="email@example.com" required>
-        </p>
-        <p>
-          <label class="write-massage" for="massage-id">Текст письма:</label>
-          <textarea name="massage" id="massage-id" rows="10" cols="40" placeholder="В свободной форме" required></textarea>
-        </p>
-        <p>
-          <button class="submit-button" type="submit">Отправить</button>
-        </p>
+      <form class="write-us content-show" method="post" action="#">
+        <div class="close"></div>
+        <div class="answer">
+          <div class="top-write">
+            <div class="write">
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" required="">
+            </div>
+            <div class="write">
+              <label for="e-mail">Ваш e-mail:</label>
+              <input type="text" id="e-mail" name="e-mail" placeholder="Для отправки ответа" required="">
+            </div>
+          </div>
+          <label for="text-letter">Текст письма:</label>
+          <textarea class="letter" id="text-letter" name="letter" placeholder="В свободной форме" required=""></textarea>
+        </div>
+        <div class="send">
+          <button class="btn" type="submit">Отправить</button>
+        </div>
       </form>
     </div>
   </footer>

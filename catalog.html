@@ -111,7 +111,7 @@
       <div class="flex-catalog">
         <section class="filters-section">
           <p class="filters-title">Фильтр:</p>
-          <form method="get" action="https://echo.htmlacademy.ru">
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="filter-item">
               <legend>Цена:</legend>
               <div class="range-filter">
@@ -128,9 +128,6 @@
                 </div>
               </div>
             </fieldset>
-          </form>
-          <div class="line"></div>
-          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <fieldset>
               <legend>Производители:</legend>
               <ul class="manufacturers">
@@ -156,7 +153,6 @@
                 </li>
               </ul>
             </fieldset>
-            <div class="line"></div>
             <fieldset>
               <legend class="nutrition">Питание:</legend>
               <ul>
@@ -181,12 +177,12 @@
             <a href="#" class="sorting-by selected">По цене</a>
             <a href="#" class="sorting-by by-type ">По типу</a>
             <a href="#" class="sorting-by by-func ">По функционалу</a>
-            <a href="#" class="up-dir selected-dir">
+            <a href="#" title="по возрастанию" class="up-dir selected-dir">
               <svg id="Layer_6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="10px" viewBox="0 0 11 10">
                 <polygon points="5.5,0 0,10 11,10 " />
               </svg>
             </a>
-            <a href="#" class="down-dir">
+            <a href="#" title="по убыванию" class="down-dir">
               <svg id="Layer_7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="10px" viewBox="0 0 11 10">
                 <polyline points="5.5,10 0,0 11,0 " />
               </svg>
@@ -194,10 +190,10 @@
           </div>
           <ul class="catalog-list flex-catalog-content">
             <li class="catalog-item">
-                <a class="catalog-photo" href="catalog-item.html">
-                  <img src="img/perforator_2.png" width="218" height="168" alt="Перфоратор BOSCH BFG 3000">
-                </a>
-                          <h3 class="catalog-item-name">
+              <a class="catalog-photo" href="catalog-item.html">
+                <img src="img/perforator_2.png" width="218" height="168" alt="Перфоратор BOSCH BFG 3000">
+              </a>
+              <h3 class="catalog-item-name">
                 Перфоратор BOSCH BFG 3000
               </h3>
               <div class="discount">22500 P .</div>
@@ -386,7 +382,7 @@
           <li><a class="social-button ins" href="#"></a></li>
         </ul>
         <p class="feedback">Обратная связь: <a href="#">mail@htmlacademy.ru</a></p>
-        <p class="developed">Разработано — <a href="#">htmlacademy.ru</a></p>
+        <p class="developed">Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
       </div>
     </div>
   </footer>
