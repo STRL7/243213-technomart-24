@@ -109,12 +109,24 @@
           <div class="slides">
             <p class="slides-title">Дрели</p>
             <p class="slides-description">Соседям на радость!</p>
+            <div class="arrows clearfix">
+              <a class="arrow-prew" href="#"><i class="icon-left-big"></i></a>
+              <a class="arrow-next" href="#"><i class="icon-right-big"></i></a>
+            </div>
             <a href="catalog.html" class="button slider-button">Открыть каталог</a>
           </div>
           <div class="slides">
             <p class="slides-title">Перфораторы</p>
             <p class="slides-description">Настоящие мужские игрушки</p>
             <a href="catalog.html" class="button slider-button">Открыть каталог</a>
+          </div>
+          <div class="category-item category-slider">
+            <input type="radio" id="bullet-1" name="bullet">
+            <input type="radio" id="bullet-2" name="bullet" checked="">
+            <div class="slider-bullets">
+              <label for="bullet-1"></label>
+              <label for="bullet-2"></label>
+            </div>
           </div>
         </div>
         <div class="box">
@@ -198,6 +210,14 @@
             </p>
           </li>
         </ul>
+        <div class="modal-content-cart modal-content-show">
+          <button type="button" class="modal-close-btn" title="Close"></button>
+          <div class="modal-title">Товар добавлен в корзину!</div>
+          <div class="cart-buttons">
+            <a class="cart-checkout" href="/checkout">Оформить заказ</a>
+            <button class="cart-cancel">Продолжить покупки</button>
+          </div>
+        </div>
       </section>
       <section class="pop-manufacturers">
         <div class="pop-manufacturers-header">
@@ -290,6 +310,10 @@
         <a href="" class="contacts-map">
           <img src="img/map.png" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55">
         </a>
+        <div class="map-show content-show">
+          <div class="close"></div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.211479112242!2d30.31892544635698!3d59.93897340148991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1472808971872" width="940" height="446" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+        </div>
         <a href="#" class="button map-button">Заблудились? Напишите нам!</a>
       </section>
     </div>
@@ -337,11 +361,11 @@
           <div class="top-write">
             <div class="write">
               <label for="name">Ваше имя:</label>
-              <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" required="">
+              <input type="text" id="name" name="name" placeholder="Имя Фамилия" required="">
             </div>
             <div class="write">
               <label for="e-mail">Ваш e-mail:</label>
-              <input type="text" id="e-mail" name="e-mail" placeholder="Для отправки ответа" required="">
+              <input type="text" id="e-mail" name="e-mail" placeholder="email@example.com" required="">
             </div>
           </div>
           <label for="text-letter">Текст письма:</label>
