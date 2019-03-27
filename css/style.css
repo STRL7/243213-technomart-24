@@ -2045,11 +2045,6 @@ input[type="radio"].visually-hidden {
 }
 
 button,
-input {
-  overflow: visible;
-}
-
-button,
 input,
 select,
 textarea {
@@ -2216,7 +2211,7 @@ textarea {
 
 .slider-bullets {
   position: absolute;
-  bottom: 46px;
+  bottom: 26px;
   width: 120px;
   height: 20px;
   left: 50%;
@@ -2226,7 +2221,7 @@ textarea {
   z-index: 100;
 }
 
-.slider {
+.slides {
   position: relative;
 }
 
@@ -2291,26 +2286,4 @@ input[type="radio"] {
   height: 40px;
   background-repeat: no-repeat;
   background-position: 0 0;
-}
-
-.slides .arrow-next {
-  float: right;
-}
-
-[class*=" icon-"]::before,
-[class^=icon-]::before {
-  display: inline-block;
-  text-decoration: inherit;
-  margin-right: .2em;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  margin-left: .2em;
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
 }
