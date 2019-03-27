@@ -2268,7 +2268,7 @@ input[type="radio"] {
   background-image: url(../img/icon-left.svg);
   content: "";
   position: absolute;
-  left: 22px;
+  left: 25px;
   top: -11px;
   width: 22px;
   height: 40px;
@@ -2280,7 +2280,7 @@ input[type="radio"] {
   background-image: url(../img/icon-right.svg);
   content: "";
   position: absolute;
-  left: 575px;
+  left: 578px;
   top: -11px;
   width: 22px;
   height: 40px;
